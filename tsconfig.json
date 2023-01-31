@@ -22,11 +22,36 @@
     "jsx": "react-jsx",
     "types": [
       "vitest/globals"
-    ]
+    ],
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@composables/*": [
+        "./src/composables/*"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@data/*": [
+        "./data/*"
+      ],
+    }
   },
   "include": [
-    "tests/**/*",
-    "src/**/*"
+    "./tests/**/*",
+    "./src/**/*"
   ],
   "references": [
     {

@@ -15,7 +15,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     transformMode: { web: [/\.[jt]sx?$/] },
-    setupFiles: ['./vitest-setup.ts'],
+    setupFiles: ['./tests/setup.ts'],
     // if you have few tests, try commenting one
     // or both out to improve performance:
     threads: false,
